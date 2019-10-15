@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+
+{% extends 'portfolio/customer.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<html lang="en">
+    <h1>Add a New Customer</h1>
+     <form method="POST" class="customer-form">{% csrf_token %}
+        {{ form|crispy}}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+</html>
+{% endblock %}
+

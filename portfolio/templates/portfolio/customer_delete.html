@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+
+{% extends 'portfolio/base.html' %}
+{% load crispy_forms_tags %}
+{% block body_block %}
+<html lang="en">
+    <h1>Delete {{ customer.name }}?</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <input type="submit" class="btn btn-danger" value="Delete">
+        <a href="{% url 'portfolio:home' pk=customer.cust_number %} ">Cancel</a>
+    </form>
+</html>
+
+{% endblock %}
+
