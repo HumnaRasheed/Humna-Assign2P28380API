@@ -7,7 +7,7 @@ whitenoise==4.0
 django-taggit==0.22.2
 Django-crispy-forms==1.7.2
 
-certifi==2019.9.11
+certifi==2022.12.7
 chardet==3.0.4
 django-mathfilters==0.4.0
 djangorestframework==3.10.3
